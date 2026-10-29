@@ -12,11 +12,18 @@ produto**: um único arquivo com CSS e JS embutidos, sem passo de build e
 sem rede. O resto do repositório é documentação. Ver `README.md` para o
 conteúdo da página.
 
-Ainda não publicado: falta enviar o ramo `pages` (só o conteúdo de
-`site/`) e definir o domínio.
+Publicado pelo Codeberg Pages em `https://observatoriomeu.com` (www
+redireciona para o domínio principal, ver `site/_redirects`; cabeçalhos em
+`site/_headers`). O ramo `pages` do Codeberg contém só o conteúdo de
+`site/`.
 
 - Repositório principal: `codeberg.org/Munayer/cejm-ufmg-observatoires-mei`
   (remoto `codeberg`). O GitHub (`origin`) é espelho: recebe o mesmo `main`.
+- Dois webhooks do Codeberg (domínio principal e www, filtro `pages`)
+  publicam a cada push no ramo `pages`. A autorização está nos registros
+  TXT `_git-pages-repository` na Hostinger, onde fica o DNS do domínio.
+- O domínio se escreve com "meu", não "mei": é o nome registrado. Não
+  corrigir.
 
 ## Comandos
 
@@ -28,21 +35,18 @@ python -m http.server 8010 --directory site     # http://localhost:8010
 
 (`.claude/launch.json` tem a mesma configuração, para o navegador do app.)
 
-Enquanto o site não está no ar, os dois remotos recebem só o `main`:
-
-```
-git push codeberg main
-git push origin main
-```
-
-Para publicar, o ramo `pages` do Codeberg recebe só o conteúdo de `site/`
-(mesmo fluxo do Observatório de Direitos Humanos). Só com pedido
-explícito do dono, porque é esse envio que põe o site no ar:
+Para publicar (depois do commit em `main`), o ramo `pages` do Codeberg
+recebe só o conteúdo de `site/` (mesmo fluxo do Observatório de Direitos
+Humanos):
 
 ```
 git push codeberg main "$(git subtree split --prefix=site HEAD):refs/heads/pages"
 git push origin main
 ```
+
+O `subtree split` é determinístico: sem mudança em `site/`, o ramo `pages`
+não muda e nada é republicado. Deste PC, o envio ao Codeberg vai por SSH,
+com a chave de implantação (ver `C:\bmm\sync\dev-github\CLAUDE.md`).
 
 ## Estrutura de `index.html`
 

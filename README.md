@@ -15,7 +15,9 @@ Este repositório segue a estrutura do Observatório de Direitos Humanos
 é documentação. A página partiu do protótipo `Observatorio_MEI.html`. O
 repositório principal fica no
 [Codeberg](https://codeberg.org/Munayer/cejm-ufmg-observatoires-mei), com
-espelho no [GitHub](https://github.com/Munayer/cejm-ufmg-observatoires-mei).
+espelho no [GitHub](https://github.com/Munayer/cejm-ufmg-observatoires-mei),
+e o site está em <https://observatoriomeu.com>, publicado pelo Codeberg
+Pages a partir do ramo `pages`.
 
 ## O que tem em `index.html`
 
@@ -43,7 +45,7 @@ site/index.html                       -- o produto. Editar direto; não há pass
 site/assets/eu/co-funded-pt-neg.png   -- emblema oficial da UE, versão para fundo escuro, sem alteração
 site/assets/cejm/cejm-pt-neg.png      -- logo do Centro de Excelência Jean Monnet, versão branca, recortado e reduzido
 site/_headers                         -- cabeçalhos HTTP (formato Netlify, lido pelo Codeberg Pages)
-site/_redirects                       -- www → domínio principal (comentado até o domínio existir)
+site/_redirects                       -- www.observatoriomeu.com redireciona para o domínio principal
 .claude/launch.json                   -- servidor local para o navegador do Claude Code
 CLAUDE.md                             -- notas para sessões do Claude Code
 README.md                             -- este arquivo
@@ -67,9 +69,6 @@ repositório até se decidir publicá-lo.
 
 ## Pendente
 
-- Publicar o site: enviar o ramo `pages` ao Codeberg (comando em
-  `CLAUDE.md`).
-- Domínio, e com ele a regra de `site/_redirects`.
 - Licença (o Observatório de Direitos Humanos pretende AGPL-3.0-or-later).
 - Publicar ou não o PDF do relatório (por exemplo, para download na aba
   Relatórios).
