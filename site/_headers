@@ -1,0 +1,10 @@
+# Cabeçalhos HTTP do site, para o Codeberg Pages (que lê o formato _headers
+# do Netlify). HTTPS e compressão o servidor já faz.
+#
+# O Codeberg só aceita cabeçalhos de uma lista permitida e descarta a regra
+# inteira se um deles ficar de fora. X-Content-Type-Options e Cache-Control
+# não estão na lista: o servidor já manda nosniff e o próprio Cache-Control,
+# então não entram aqui (mesma decisão do Observatório de Direitos Humanos).
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()

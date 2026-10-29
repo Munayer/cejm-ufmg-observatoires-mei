@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.claude/settings.local.json
+# Relatório e planilhas de origem ficam fora do git até se decidir publicá-los
+*.pdf
+*.xlsx

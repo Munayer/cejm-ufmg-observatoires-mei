@@ -1,0 +1,5 @@
+# Redirecionamentos do Codeberg Pages (formato _redirects do Netlify).
+# Quando o domínio existir, trocar DOMINIO e tirar o "#" da regra abaixo:
+# o www passa a redirecionar para o domínio principal. O "!" faz a regra
+# valer mesmo quando a página existe.
+# //www.DOMINIO/* https://DOMINIO/:splat 301!
