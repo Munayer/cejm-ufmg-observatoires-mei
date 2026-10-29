@@ -12,7 +12,10 @@ versão digital do relatório final; todo número nele vem desse documento.
 
 Este repositório segue a estrutura do Observatório de Direitos Humanos
 (`cejm-ufmg-observatoires-humanrights`): só `site/` vai para o ar; o resto
-é documentação. A página partiu do protótipo `Observatorio_MEI.html`.
+é documentação. A página partiu do protótipo `Observatorio_MEI.html`. O
+repositório principal fica no
+[Codeberg](https://codeberg.org/Munayer/cejm-ufmg-observatoires-mei), com
+espelho no [GitHub](https://github.com/Munayer/cejm-ufmg-observatoires-mei).
 
 ## O que tem em `index.html`
 
@@ -62,8 +65,8 @@ repositório até se decidir publicá-lo.
 
 ## Pendente
 
-- Criar o repositório (Codeberg como principal, GitHub como espelho) e
-  incluí-lo em `sync-repos.ps1` e na tabela de `dev-github/CLAUDE.md`.
+- Publicar o site: enviar o ramo `pages` ao Codeberg (comando em
+  `CLAUDE.md`).
 - Domínio, e com ele a regra de `site/_redirects`.
 - Licença (o Observatório de Direitos Humanos pretende AGPL-3.0-or-later).
 - Publicar ou não o PDF do relatório (por exemplo, para download na aba

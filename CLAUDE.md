@@ -12,9 +12,11 @@ produto**: um único arquivo com CSS e JS embutidos, sem passo de build e
 sem rede. O resto do repositório é documentação. Ver `README.md` para o
 conteúdo da página.
 
-Ainda não publicado: o git é só local, sem remoto. Falta criar o
-repositório (Codeberg como principal, GitHub como espelho, como no
-Observatório de Direitos Humanos) e definir o domínio.
+Ainda não publicado: falta enviar o ramo `pages` (só o conteúdo de
+`site/`) e definir o domínio.
+
+- Repositório principal: `codeberg.org/Munayer/cejm-ufmg-observatoires-mei`
+  (remoto `codeberg`). O GitHub (`origin`) é espelho: recebe o mesmo `main`.
 
 ## Comandos
 
@@ -26,8 +28,16 @@ python -m http.server 8010 --directory site     # http://localhost:8010
 
 (`.claude/launch.json` tem a mesma configuração, para o navegador do app.)
 
-Para publicar, quando o repositório e o Codeberg Pages existirem (mesmo
-fluxo do Observatório de Direitos Humanos):
+Enquanto o site não está no ar, os dois remotos recebem só o `main`:
+
+```
+git push codeberg main
+git push origin main
+```
+
+Para publicar, o ramo `pages` do Codeberg recebe só o conteúdo de `site/`
+(mesmo fluxo do Observatório de Direitos Humanos). Só com pedido
+explícito do dono, porque é esse envio que põe o site no ar:
 
 ```
 git push codeberg main "$(git subtree split --prefix=site HEAD):refs/heads/pages"
