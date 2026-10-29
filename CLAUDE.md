@@ -60,9 +60,14 @@ git push origin main
   (`[rótulo, valor]`). O gráfico de barras é SVG desenhado por `draw()`,
   sem biblioteca; as cores das barras estão repetidas ali, então mudar a
   paleta exige mudar `draw()` também.
-- Rodapé: emblema "Cofinanciado pela União Europeia" (versão negativa,
-  para o fundo escuro) e o aviso da EACEA, iguais aos do Observatório
-  SOMA. O emblema vai sem alteração e com pelo menos 1 cm de altura.
+- Rodapé: emblema "Cofinanciado pela União Europeia" e marca do Centro
+  de Excelência Jean Monnet, ambos na versão para fundo escuro, e o aviso
+  da EACEA, como no Observatório SOMA. O emblema vai sem alteração e com
+  pelo menos 1 cm de altura; a marca do CEJM fica ao lado, na mesma
+  altura e nunca maior que o emblema (regra da UE para marcas exibidas
+  com ele). `assets/cejm/cejm-pt-neg.png` é o logo branco do pacote do
+  centro, recortado nas bordas transparentes e reduzido a 168 px de
+  altura (3× os 56 px).
 
 ## Regras de conteúdo
 

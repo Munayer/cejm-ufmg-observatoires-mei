@@ -31,15 +31,17 @@ espelho no [GitHub](https://github.com/Munayer/cejm-ufmg-observatoires-mei).
   situação da atividade, escolaridade por sexo, necessidade e renda). O
   leitor escolhe dois recortes e vê a diferença; cada indicador mostra a
   fonte e uma nota de método.
-- **Rodapé** — emblema "Cofinanciado pela União Europeia" e o aviso da
-  EACEA, seguindo as orientações da Comissão Europeia para quem recebe
-  financiamento da UE (as Ações Jean Monnet são do programa Erasmus+).
+- **Rodapé** — emblema "Cofinanciado pela União Europeia", marca do
+  Centro de Excelência Jean Monnet e o aviso da EACEA, seguindo as
+  orientações da Comissão Europeia para quem recebe financiamento da UE
+  (as Ações Jean Monnet são do programa Erasmus+).
 
 ## Estrutura do repositório
 
 ```
 site/index.html                       -- o produto. Editar direto; não há passo de build.
 site/assets/eu/co-funded-pt-neg.png   -- emblema oficial da UE, versão para fundo escuro, sem alteração
+site/assets/cejm/cejm-pt-neg.png      -- logo do Centro de Excelência Jean Monnet, versão branca, recortado e reduzido
 site/_headers                         -- cabeçalhos HTTP (formato Netlify, lido pelo Codeberg Pages)
 site/_redirects                       -- www → domínio principal (comentado até o domínio existir)
 .claude/launch.json                   -- servidor local para o navegador do Claude Code
